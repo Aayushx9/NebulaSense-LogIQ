@@ -49,11 +49,71 @@ nebula-sense-logiq/
 - Docker
 - Kubernetes (optional)
 
+### How It Works
+NebulaSense LogIQ processes logs through a modular, cloud‑native anomaly intelligence pipeline:
+
+1. **LogIQ Sim** generates realistic microservice logs with injected anomalies.
+2. **LogIQ Stream** ingests logs in real time and batches them for processing.
+3. **LogIQ Core** performs sequence modeling and computes the LogIQ Score.
+4. **LogIQ API** exposes predictions and service‑level insights via REST endpoints.
+5. **LogIQ View** visualizes anomalies, embeddings, and service health.
+
+#### System Flow
+logs → stream → model → score → API → dashboard
+    ┌──────────────┐
+    │  LogIQ Sim   │
+    └──────┬───────┘
+           │ logs
+           ▼
+    ┌──────────────┐
+    │ LogIQ Stream │
+    └──────┬───────┘
+           │ batches
+           ▼
+    ┌──────────────┐
+    │  LogIQ Core  │
+    └──────┬───────┘
+           │ scores
+           ▼
+    ┌──────────────┐
+    │  LogIQ API   │
+    └──────┬───────┘
+           │ JSON
+           ▼
+    ┌──────────────┐
+    │ LogIQ View   │
+    └──────────────┘
+### Screenshots / Demo
+
+> Coming soon:  
+> - Anomaly timeline  
+> - Service dependency graph  
+> - Embedding visualization  
+> - Real‑time anomaly spikes
+
 ### Installation
 (You can fill this in once your environment is finalized.)
 
 ### Quick Start
 (Also added once your entry points are ready.)
+
+### Deployment
+
+NebulaSense LogIQ supports multiple deployment modes:
+
+#### **Local Development**
+- Run the dashboard with Streamlit  
+- Run the API with FastAPI  
+- Run the simulator to generate logs  
+
+#### **Docker**
+Dockerfiles for API, dashboard, and core components are available under `deployment/docker/`.
+
+#### **Kubernetes**
+K8s manifests for scalable deployment are available under `deployment/kubernetes/`.
+
+#### **Cloud Providers**
+Guides for AWS, GCP, and Azure are included in `deployment/cloud/`.
 
 ### License
 Apache 2.0
