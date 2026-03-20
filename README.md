@@ -4,25 +4,25 @@ NebulaSense LogIQ is a next‑generation anomaly intelligence platform designed 
 Built for developers, SREs, data scientists, and cloud engineers, NebulaSense LogIQ detects unusual behavior across microservices, API gateways, containers, and distributed workloads, before failures cascade.
 
 This repository contains the full end‑to‑end platform:
-- LogIQ Core — TensorFlow‑powered sequence anomaly model
-- LogIQ Score — hybrid anomaly metric combining reconstruction error, embedding drift, and temporal deviation
-- LogIQ Stream — real‑time log ingestion and streaming pipeline
-- LogIQ View — interactive Streamlit + Plotly dashboard for cloud observability
-- LogIQ API — FastAPI service for prediction, health checks, and service‑level insights
-- LogIQ Sim — synthetic microservice environment generating realistic cloud logs with injected anomalies
+- LogIQ Core - TensorFlow‑powered sequence anomaly model
+- LogIQ Score - hybrid anomaly metric combining reconstruction error, embedding drift, and temporal deviation
+- LogIQ Stream - real‑time log ingestion and streaming pipeline
+- LogIQ View - interactive Streamlit + Plotly dashboard for cloud observability
+- LogIQ API - FastAPI service for prediction, health checks, and service‑level insights
+- LogIQ Sim - synthetic microservice environment generating realistic cloud logs with injected anomalies
 
 ### Key Features
-- LogIQ Core — Deep Learning Anomaly Engine
+- LogIQ Core - Deep Learning Anomaly Engine
 Learns normal system behavior using sequence modeling and flags deviations in real time.
-- LogIQ Score — Unified Anomaly Metric
+- LogIQ Score - Unified Anomaly Metric
 A custom anomaly index combining multiple signals into one interpretable score.
-- LogIQ Stream — Real‑Time Log Ingestion
+- LogIQ Stream - Real‑Time Log Ingestion
 Processes logs from simulated microservices, files, APIs, and optional streaming sources.
-- LogIQ Sim — Synthetic Microservice Environment
+- LogIQ Sim - Synthetic Microservice Environment
 Generates realistic logs, latency spikes, cascading failures, and injected anomalies for demos and testing.
-- LogIQ View — Interactive Observability Dashboard
+- LogIQ View - Interactive Observability Dashboard
 Visualizes anomalies, service health, embeddings, and latency patterns through a clean, intuitive UI.
-- LogIQ API — FastAPI Service Layer
+- LogIQ API - FastAPI Service Layer
 Provides REST endpoints for anomaly prediction, health checks, and service‑level insights.
 
 ### Repository Structure
