@@ -26,35 +26,20 @@ Visualizes anomalies, service health, embeddings, and latency patterns through a
 Provides REST endpoints for anomaly prediction, health checks, and service‑level insights.
 
 ### Repository Structure
+```text
 nebula-sense-logiq/
 │
-├── logiq_core/        
-│   └── # ML engine
-│
-├── logiq_stream/      
-│   └── # streaming pipeline
-│
-├── logiq_view/        
-│   └── # dashboard
-│
-├── logiq_api/         
-│   └── # FastAPI service
-│
-├── logiq_sim/         
-│   └── # microservice simulator
-│
-├── docs/              
-│   └── # architecture, scoring, roadmap
-│
-├── examples/          
-│   └── # notebooks + demos
-│
-├── data/              
-│   └── # sample logs
-│
-└── deployment/        
-    └── # Docker + Kubernetes configs
+├── logiq_core/
+├── logiq_stream/
+├── logiq_view/
+├── logiq_api/
+├── logiq_sim/
+├── docs/
+├── examples/
+├── data/
+└── deployment/
 
+```
 ### Tech Stack
 - Python
 - TensorFlow
