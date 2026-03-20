@@ -2,6 +2,7 @@
 Cloud‑Native Anomaly Intelligence Engine
 NebulaSense LogIQ is a next‑generation anomaly intelligence platform designed for modern, distributed, cloud‑native systems. It combines real‑time log streaming, deep learning–based anomaly detection, and an interactive observability dashboard into a single, cohesive system.
 Built for developers, SREs, data scientists, and cloud engineers, NebulaSense LogIQ detects unusual behavior across microservices, API gateways, containers, and distributed workloads, before failures cascade.
+
 This repository contains the full end‑to‑end platform:
 - LogIQ Core — TensorFlow‑powered sequence anomaly model
 - LogIQ Score — hybrid anomaly metric combining reconstruction error, embedding drift, and temporal deviation
@@ -26,17 +27,16 @@ Provides REST endpoints for anomaly prediction, health checks, and service‑lev
 
 ### Repository Structure
 nebula-sense-logiq/
--│
--├── logiq_core/        # ML engine
--├── logiq_stream/      # streaming pipeline
--├── logiq_view/        # dashboard
--├── logiq_api/         # FastAPI service
--├── logiq_sim/         # microservice simulator
--├── docs/              # architecture, scoring, roadmap
--├── examples/          # notebooks + demos
--├── data/              # sample logs
--└── deployment/        # Docker + Kubernetes configs
-
+│
+├── logiq_core/        # ML engine
+├── logiq_stream/      # streaming pipeline
+├── logiq_view/        # dashboard
+├── logiq_api/         # FastAPI service
+├── logiq_sim/         # microservice simulator
+├── docs/              # architecture, scoring, roadmap
+├── examples/          # notebooks + demos
+├── data/              # sample logs
+└── deployment/        # Docker + Kubernetes configs
 
 ### Tech Stack
 - Python
