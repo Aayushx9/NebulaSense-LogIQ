@@ -60,6 +60,7 @@ NebulaSense LogIQ processes logs through a modular, cloud‑native anomaly intel
 
 #### System Flow
 logs → stream → model → score → API → dashboard
+``` text
     ┌──────────────┐
     │  LogIQ Sim   │
     └──────┬───────┘
@@ -83,6 +84,7 @@ logs → stream → model → score → API → dashboard
     ┌──────────────┐
     │ LogIQ View   │
     └──────────────┘
+```
 ### Screenshots / Demo
 
 > Coming soon:  
