@@ -28,15 +28,32 @@ Provides REST endpoints for anomaly prediction, health checks, and service‑lev
 ### Repository Structure
 nebula-sense-logiq/
 │
-├── logiq_core/        # ML engine
-├── logiq_stream/      # streaming pipeline
-├── logiq_view/        # dashboard
-├── logiq_api/         # FastAPI service
-├── logiq_sim/         # microservice simulator
-├── docs/              # architecture, scoring, roadmap
-├── examples/          # notebooks + demos
-├── data/              # sample logs
-└── deployment/        # Docker + Kubernetes configs
+├── logiq_core/        
+│   └── # ML engine
+│
+├── logiq_stream/      
+│   └── # streaming pipeline
+│
+├── logiq_view/        
+│   └── # dashboard
+│
+├── logiq_api/         
+│   └── # FastAPI service
+│
+├── logiq_sim/         
+│   └── # microservice simulator
+│
+├── docs/              
+│   └── # architecture, scoring, roadmap
+│
+├── examples/          
+│   └── # notebooks + demos
+│
+├── data/              
+│   └── # sample logs
+│
+└── deployment/        
+    └── # Docker + Kubernetes configs
 
 ### Tech Stack
 - Python
