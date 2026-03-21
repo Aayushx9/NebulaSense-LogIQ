@@ -5,6 +5,7 @@ nebula-sense-logiq/
 ├── .gitignore
 ├── Repository Structure         
 ├── requirements.txt
+├── requirements-colab.txt
 │
 ├── logiq_core/                    # ML engine
 │   ├── __init__.py
